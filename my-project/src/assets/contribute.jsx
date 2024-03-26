@@ -12,7 +12,7 @@ const tabs = [
 ];
 
 const Contribute = () => {
-  const [activeTab, setActiveTab] = useState();
+  const [activeTab, setActiveTab] = useState(1);
 
   const handleTabClick = (tabIndex) => {
     setActiveTab(tabIndex);
@@ -81,14 +81,14 @@ const Contribute = () => {
 
   return (
     <div className=" mt-10   mx-auto w-full max-w-[848px] font-roboto">
-      <div className="bg-white rounded-md w-full h-auto sm:p-4 p-[14px]  border">
+      <div className="bg-white rounded-md w-full h-auto lg:p-4 p-[14px]  border">
         <div className="flex justify-center">
-          <h1 className="sm:text-[1.7rem] text-[1.27rem] text-[#4284f3] font-normal font-roboto ">
+          <h1 className="lg:text-[1.7rem] text-[1.27rem] text-[#4284f3] font-normal font-roboto ">
             Chúng tôi có thể giúp gì cho bạn?
           </h1>
         </div>
         <div className="grid grid-cols-2 gap-2 relative  mt-2">
-          <div className="sm:w-2/3 w-full">
+          <div className="lg:w-2/3 w-full">
             <form className="max-w-sm ">
               <div className="relative ">
                 <input
@@ -136,7 +136,7 @@ const Contribute = () => {
             key={a}
             className={` border-b-4  border-transparent whitespace-nowrap hover:bg-gray-100 hover:rounded  text-[#777d74] text-xs px-4 py-2 ${
               activeTab === tab.id
-                ? "inline-block p-4  !border-blue-600   rounded-t-lg  text-blue-600  "
+                ? "inline-block p-4  !border-blue-600 border-b-[3px]  rounded-t-lg  text-blue-600  "
                 : ""
             }`}
             onClick={() => handleTabClick(tab.id)}
@@ -146,30 +146,31 @@ const Contribute = () => {
         ))}
       </div>
       <div className="mt-2 p-2">
-        {activeTab === 1 && <div></div>}
-        {activeTab === 2 && (
+        {activeTab === 1 && (
           <div className="">
             <div className="relative font-serif max-w-4xl w-full duration-1000 border rounded-md drop-shadow-md">
-              <div className="relative">
+              <div className="flex justify-between items-center p-[15px]">
                 <button
                   type="button"
-                  className="inline-flex  w-full rounded-t-sm  p-[15px]  bg-white text-md font-medium font-inter"
+                  className="inline-flex  w-full rounded-t-sm text-md font-medium font-roboto"
                   onClick={toggleDropdown}
                 >
                   {selectedOption
                     ? selectedOption
                     : "Mời bạn đóng góp ý tưởng phát triển sản phẩm và phát hiện các lỗi khi sử dụng cùng chúng tôi !"}
+                </button>
+                <div>
                   <img
-                    className="absolute right-5"
+                    className=""
                     src="https://vdiarybook.com/assets/icons/default/dropdown.svg"
                     alt=""
                   />
-                </button>
+                </div>
               </div>
               {isOpen && (
                 <div className="p-[14px]  w-full rounded-b-sm shadow-lg h-auto bg-white ring-1  ring-opacity-5 transform scale-100 delay-1000 duration-1000">
                   <div className="flex justify-center bg-[#ededed] px-[0.6rem] py-[0.32rem] rounded-[0.25rem]">
-                    <h1 className="text-[#3f414d] font-semibold text-sm font-roboto leading-6">
+                    <h1 className="text-[#3f414d] font-semibold lg:text-sm text-[] font-roboto leading-6">
                       Sản phẩm đang trong giai đoạn nghiên cứu phát triển và
                       trải nghiệm.Trong quá trình trải nghiệm nếu bạn phát hiện
                       lỗi hoặc có ý tưởng các chức năng cho sản phẩm hãy gởi
@@ -184,29 +185,37 @@ const Contribute = () => {
                         rows="4"
                         class="block outline-none p-2.5 w-full text-sm text-gray-900 bg-white rounded-md border border-gray-300  "
                       ></textarea>
-                      <div className="bg-white w-auto rounded-sm h-auto p-1 absolute top-[-12px] left-2 flex justify-center items-center">
-                        <div className=" text-[#8d8a8a] sm:text-sm text-[0.7rem] font-roboto">
+                      <div className="bg-white w-auto rounded-sm h-auto p-1 absolute top-[-15px] left-2 flex justify-center items-center gap-1">
+                        <div className=" text-[#8d8a8a] lg:text-sm text-[0.7rem] font-roboto fex">
                           Mô tả lỗi bạn phát hiện
                         </div>
+                        <div className="text-red-400">*</div>
                       </div>
                     </div>
                   </div>
                   <div className="font-roboto">
                     <div className="pt-5">
                       <div className="flex mb-2 gap-1">
-                        <div className="sm:text-sm text-[0.77rem] font-normal text-[#2a1d33]">
+                        <div className="lg:text-sm text-[0.77rem] font-normal text-[#2a1d33]">
                           Loại thiết bị đang gặp lỗi
                         </div>
                         <div className="text-red-400 text-sm">*</div>
                       </div>
                       <div
-                        className="w-full bg-white border border-gray-400 px-4 py-2 rounded text-[0.875rem] font-normal text-[#555770]"
+                        className="w-full bg-white border border-gray-400 px-4 py-2 rounded text-[0.875rem] font-normal text-[#555770] flex justify-between items-center"
                         onClick={() => setShowOptions1(!showOptions1)}
                       >
                         {selectedOption1 || "Chọn loại"}
+                        <div>
+                          <img
+                            className="h-5 w-5"
+                            src="https://vdiarybook.com/assets/icons/default/dropdown.svg"
+                            alt=""
+                          />
+                        </div>
                       </div>
                       {showOptions1 && (
-                        <div className="w-full bg-white border border-gray-400 rounded shadow-md text-[0.875rem] font-normal text-[#555770] mt-2">
+                        <div className="w-full bg-white border border-gray-400 rounded shadow-md text-[0.875rem] font-normal text-[#555770] mt-2 ">
                           {options1.map((option, index) => (
                             <div
                               key={index}
@@ -222,16 +231,23 @@ const Contribute = () => {
 
                     <div className="pt-5">
                       <div className="flex mb-2 gap-1">
-                        <div className="sm:text-sm text-[0.77rem] font-normal text-[#2a1d33]">
+                        <div className="lg:text-sm text-[0.77rem] font-normal text-[#2a1d33]">
                           Hệ điều hành hiện tại bạn đang sử dụng sảy ra lỗi
                         </div>
                         <div className="text-red-400 text-sm">*</div>
                       </div>
                       <div
-                        className="w-full bg-white border border-gray-400 px-4 py-2 rounded text-[0.875rem] font-normal text-[#555770]"
+                        className="w-full bg-white border border-gray-400 px-4 py-2 rounded text-[0.875rem] font-normal text-[#555770] flex justify-between items-center"
                         onClick={() => setShowOptions2(!showOptions2)}
                       >
-                        {selectedOption2 || "Windows"}
+                        {selectedOption2 || "Chọn hệ điều hành"}
+                        <div>
+                          <img
+                            className="h-5 w-5"
+                            src="https://vdiarybook.com/assets/icons/default/dropdown.svg"
+                            alt=""
+                          />
+                        </div>
                       </div>
                       {showOptions2 && (
                         <div className="w-full bg-white border border-gray-400 rounded shadow-md text-[0.875rem] font-normal text-[#555770] mt-2">
@@ -250,16 +266,23 @@ const Contribute = () => {
 
                     <div className="pt-5">
                       <div className="flex mb-2 gap-1">
-                        <div className="sm:text-sm text-[0.77rem] font-normal text-[#2a1d33]">
+                        <div className="lg:text-sm text-[0.77rem] font-normal text-[#2a1d33]">
                           Trình duyệt bạn đang truy cập
                         </div>
                         <div className="text-red-400 text-sm">*</div>
                       </div>
                       <div
-                        className="w-full bg-white border border-gray-400 px-4 py-2 rounded text-[0.875rem] font-normal text-[#555770]"
+                        className="w-full bg-white border border-gray-400 px-4 py-2 rounded text-[0.875rem] font-normal text-[#555770] flex justify-between items-center"
                         onClick={() => setShowOptions3(!showOptions3)}
                       >
                         {selectedOption3 || "Chọn trình duyệt"}
+                        <div>
+                          <img
+                            className="h-5 w-5"
+                            src="https://vdiarybook.com/assets/icons/default/dropdown.svg"
+                            alt=""
+                          />
+                        </div>
                       </div>
                       {showOptions3 && (
                         <div className="w-full bg-white border border-gray-400 rounded shadow-md text-[0.875rem] font-normal text-[#555770] mt-2">
@@ -277,21 +300,7 @@ const Contribute = () => {
                     </div>
                   </div>
 
-                  <div className="pt-5">
-                    <div className="relative ">
-                      <textarea
-                        id="message"
-                        rows="4"
-                        class="block outline-none p-2.5 w-full text-sm text-gray-900 bg-white rounded-md border border-gray-300  "
-                      ></textarea>
-                      <div className="bg-white w-auto rounded-sm h-auto p-1 absolute top-[-12px] left-2 flex justify-center items-center">
-                        <div className=" text-[#8d8a8a] text-[0.7rem] font-roboto">
-                          Nội dung cần hỗ trợ
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="pt-4 sm:text-sm text-[0.77rem] font-roboto text-[#555770]">
+                  <div className="pt-4 lg:text-sm text-[0.77rem] font-roboto text-[#555770]">
                     Ảnh,Video mô tả lỗi hiện tại giúp chúng tôi khắc phục sớm
                     nhất.
                   </div>
@@ -341,15 +350,15 @@ const Contribute = () => {
                         rows="4"
                         class="block outline-none p-2.5 w-full text-sm text-gray-900 bg-white rounded-md border border-gray-300  "
                       ></textarea>
-                      <div className="bg-white w-auto rounded-sm h-auto p-1 absolute top-[-12px] left-2 flex justify-center items-center">
-                        <div className=" text-[#8d8a8a] sm:text-sm text-[0.7rem] font-roboto mx-[0.5rem]">
+                      <div className="bg-white w-auto rounded-sm h-auto p-1 absolute top-[-15px] left-2 flex justify-center items-center">
+                        <div className=" text-[#8d8a8a] lg:text-sm text-[0.7rem] font-roboto mx-[0.5rem]">
                           Bạn có ý tưởng về chức năng gì muốn chúng tôi tích hợp
                           vào sản phẩm ?
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="pt-4 sm:text-sm text-[0.77rem] font-roboto text-[#555770]">
+                  <div className="pt-4 lg:text-sm text-[0.77rem] font-roboto text-[#555770]">
                     Ảnh mô tả ý tưởng của bạn về chức năng (nếu có)
                   </div>
                   <div className=" pt-4 flex gap-2 flex-wrap ">
@@ -392,7 +401,7 @@ const Contribute = () => {
                     </button>
                   </div>
                   <div className=" flex  justify-center pt-4">
-                    <button className="py-[6px] px-5 rounded bg-[#4284f3] text-white">
+                    <button className="py-[6px] px-5 rounded bg-[#4284f3] text-white opacity-65">
                       Gửi
                     </button>
                   </div>
@@ -401,6 +410,7 @@ const Contribute = () => {
             </div>
           </div>
         )}
+        {activeTab === 2 && <div></div>}
         {activeTab === 3 && <div className=""></div>}
       </div>
     </div>
