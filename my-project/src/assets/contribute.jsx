@@ -23,7 +23,7 @@ const Contribute = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-  //themimg
+  //select
 
   const [elements1, setElements1] = useState([]);
   const [elements2, setElements2] = useState([]);
