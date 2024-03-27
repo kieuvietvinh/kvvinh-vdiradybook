@@ -290,7 +290,7 @@ const Utilities = () => {
                   <div className="w-1 h-[11.99px] -rotate-0 bg-[#4284f3] absolute -right-1 bottom-0 "></div>
                   <div className="w-[5px] h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-1 top-0 "></div>
                   <p className="mt-[1.5px] text-white lg:text-sm text-[0.77rem] font-normal ">
-                    Cửa hàng tiện ích
+                    Thư viện tri thức số
                   </p>
                 </div>
               </div>
