@@ -113,9 +113,9 @@ const Contribute = () => {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      // stroke-linecap="round"
+                      // stroke-linejoin="round"
+                      // stroke-width="2"
                       d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                     />
                   </svg>
@@ -183,7 +183,7 @@ const Contribute = () => {
                       <textarea
                         id="message"
                         rows="4"
-                        class="block outline-none p-2.5 w-full text-sm text-gray-900 bg-white rounded-md border border-gray-300  "
+                        class="block outline-none px-2.5 py-[0.33rem] w-full text-sm text-gray-900 bg-white rounded-md border border-gray-300  "
                       ></textarea>
                       <div className="bg-white w-auto rounded-sm h-auto p-1 absolute top-[-15px] left-2 flex justify-center items-center gap-1">
                         <div className=" text-[#8d8a8a] lg:text-sm text-[0.7rem] font-roboto fex">
@@ -382,7 +382,7 @@ const Contribute = () => {
                           <input
                             id="dropzone-file"
                             type="file"
-                            class="hidden"
+                            className="hidden"
                           />
                           <button
                             className=" w-6 h-6 bg-[#4284f3] text-white rounded flex items-center justify-center absolute right-0 top-0"
@@ -401,7 +401,7 @@ const Contribute = () => {
                     </button>
                   </div>
                   <div className=" flex  justify-center pt-4">
-                    <button className="py-[6px] px-5 rounded bg-[#4284f3] text-white opacity-65">
+                    <button className="py-[6px] px-5 rounded bg-[#4284f3] text-white opacity-65 font-roboto">
                       Gửi
                     </button>
                   </div>
