@@ -195,6 +195,200 @@ const insurances = [
     name: "Túi thần tài",
   },
 ];
+//bill
+const bills = [
+  {
+    id: 1,
+    img: "https://file.vdiarybook.com/api/files/admin/c54a2994-dae8-46f4-b5bf-e6554c51e535.jpg",
+    name: "Dịch vụ công",
+  },
+  {
+    id: 2,
+    img: "https://file.vdiarybook.com/api/files/admin/6c6e01b6-0140-43b4-85c1-ed71e3db50dc.svg",
+    name: "Đóng học phí",
+  },
+  {
+    id: 3,
+    img: "https://file.vdiarybook.com/api/files/admin/bf6320c4-eab8-4395-915b-c6b68db50f42.svg",
+    name: "Điện thoại cố định",
+  },
+  {
+    id: 4,
+    img: "https://file.vdiarybook.com/api/files/admin/5d9c0708-b8a1-4b73-8068-3eff0cf99ca5.svg",
+    name: "Chung cư",
+  },
+  {
+    id: 5,
+    img: "https://file.vdiarybook.com/api/files/admin/ba41f4f4-a5a2-4e76-9cbd-a48756208ff9.svg",
+    name: "Truyền hình cáp",
+  },
+  {
+    id: 6,
+    img: "https://file.vdiarybook.com/api/files/admin/68a8c4da-5518-498b-b560-85d7f4bdcc37.svg",
+    name: "Mạng-Internet",
+  },
+  {
+    id: 7,
+    img: "https://file.vdiarybook.com/api/files/admin/8c0a837b-889e-4e3c-a10d-9a46f683e9ca.svg",
+    name: "Nước ",
+  },
+  {
+    id: 8,
+    img: "https://file.vdiarybook.com/api/files/admin/d9233b76-5779-46b3-ac9d-300f87739bdc.svg",
+    name: "Điện",
+  },
+];
+//travel
+const travels = [
+  {
+    id: 1,
+    img: "https://file.vdiarybook.com/api/files/admin/4509601e-8c7d-478a-a7dd-100b7ca10415.svg",
+    name: "Trải nghiệm",
+  },
+  {
+    id: 2,
+    img: "https://file.vdiarybook.com/api/files/admin/2e7aeab6-2b86-4076-aa51-7d2bb6fa7da4.svg",
+    name: "Vé máy bay",
+  },
+  {
+    id: 3,
+    img: "https://file.vdiarybook.com/api/files/admin/fddea46f-578b-4786-8a20-e8d6379b25a5.svg",
+    name: "Đặt khách sạn",
+  },
+  {
+    id: 4,
+    img: "https://file.vdiarybook.com/api/files/admin/7bd1f08a-4a1d-491f-b9a0-f8cac84787c5.svg",
+    name: "Vé tàu hỏa",
+  },
+  {
+    id: 5,
+    img: "https://file.vdiarybook.com/api/files/admin/f675e713-5a68-416f-b969-f615a6a6e66b.svg",
+    name: "Vé xe khách",
+  },
+  {
+    id: 6,
+    img: "https://file.vdiarybook.com/api/files/admin/70d3e017-ddcc-485b-bab2-d99fac1027e3.svg",
+    name: "Khách sạn theo giờ",
+  },
+];
+//Transfer
+const transfers = [
+  {
+    id: 1,
+    img: "https://file.vdiarybook.com/api/files/admin/4db4f416-47ba-4233-a760-8049f0fd1559.svg",
+    name: "Chuyển tiền ngân hàng",
+  },
+  {
+    id: 2,
+    img: "https://file.vdiarybook.com/api/files/admin/84cb850c-bc88-4f54-a3bb-7a8b7c83d8a6.svg",
+    name: "Chuyển tiền Vzonex",
+  },
+];
+//Ecommerce
+const ecommerces = [
+  {
+    id: 1,
+    img: "https://file.vdiarybook.com/api/files/admin/97e2bbcf-14ec-401b-95c6-926691a5090f.jpg",
+    name: "Đồ ăn vặt online",
+  },
+  {
+    id: 2,
+    img: "https://file.vdiarybook.com/api/files/admin/3859bc51-95fb-4002-8981-9eaabbe5b565.svg",
+    name: "Mua sắm online",
+  },
+  {
+    id: 3,
+    img: "https://file.vdiarybook.com/api/files/admin/efd13e46-0c1b-4a10-bc3a-6fe704154890.svg",
+    name: "Đi chợ online",
+  },
+];
+//phoneCard
+const phonecards = [
+  {
+    id: 1,
+    img: "https://file.vdiarybook.com/api/files/admin/5612300a-2673-409d-a60b-1f5599efd416.jpg",
+    name: "Nạp điện thoại trả sau",
+  },
+  {
+    id: 2,
+    img: "https://file.vdiarybook.com/api/files/admin/8f642dc0-895c-4536-98e8-ea3be20133de.svg",
+    name: "Mua mã thẻ cào ĐT",
+  },
+  {
+    id: 3,
+    img: "https://file.vdiarybook.com/api/files/admin/d79a5478-fd85-405c-aba1-e3f9882e0c4c.svg",
+    name: "Data 3G/4G",
+  },
+];
+//games
+const games = [
+  {
+    id: 1,
+    img: "https://file.vdiarybook.com/api/files/admin/828dfcd0-af48-4ce8-9d20-fd627c9d31df.jpg",
+    name: "NXem phim online",
+  },
+  {
+    id: 2,
+    img: "https://file.vdiarybook.com/api/files/admin/e4665626-8b9d-41df-bdce-e2ae1d251ad4.svg",
+    name: "Google Play",
+  },
+  {
+    id: 3,
+    img: "https://file.vdiarybook.com/api/files/admin/54810b02-535a-49f4-8da2-8435e21f2289.svg",
+    name: "App Store",
+  },
+  {
+    id: 4,
+    img: "https://file.vdiarybook.com/api/files/admin/2438cd05-7e9b-43e0-a67d-a08054e906d6.jpg",
+    name: "Thẻ game",
+  },
+];
+//pays
+const pays = [
+  {
+    id: 1,
+    img: "https://file.vdiarybook.com/api/files/admin/d6fb2e45-5a01-458e-89e4-7214e9337f22.jpg",
+    name: "Karaoke",
+  },
+  {
+    id: 2,
+    img: "https://file.vdiarybook.com/api/files/admin/376c54a1-e31d-4521-9afc-6a69c5175749.jpg",
+    name: "Bệnh viện",
+  },
+  {
+    id: 3,
+    img: "https://file.vdiarybook.com/api/files/admin/05cd3352-4b9f-4a59-a8ca-d900c8ee9cbd.jpg",
+    name: "Xăng dầu",
+  },
+  {
+    id: 4,
+    img: "https://file.vdiarybook.com/api/files/admin/e3f50bec-3f50-4c16-a4c3-62680634c914.jpg",
+    name: "Mua sắm",
+  },
+  {
+    id: 5,
+    img: "https://file.vdiarybook.com/api/files/admin/a0d167bc-38a0-4658-b4e2-2710ab045f34.jpg",
+    name: "Ẩm thực",
+  },
+  {
+    id: 6,
+    img: "https://file.vdiarybook.com/api/files/admin/82f2421f-223a-484b-a276-e940d129f97f.jpg",
+    name: "Cửa hàng tiện lợi",
+  },
+  {
+    id: 7,
+    img: "https://file.vdiarybook.com/api/files/admin/14f238ad-3c6e-4372-992e-24d1b4a949e0.jpg",
+    name: "Siêu thị",
+  },
+];
+//Demo
+const demos = [
+  {
+    id: 1,
+    img: "https://vdiarybook.com/assets/images/VDB-64.png",
+    name: "demo",
+  },
+];
 
 const Utilities = () => {
   const [activeTab, setActiveTab] = useState(1);
@@ -222,6 +416,7 @@ const Utilities = () => {
       </div>
       <div className="pt-14 font-roboto">
         {activeTab === 1 && (
+          //  Công cụ thông minh
           <div className="">
             <div className=" flex relative items-center  ">
               <div className="bg-[#4284f3]  px-8 w-auto h-[30px]  absolute bottom-0 flex justify-center items-center">
@@ -252,6 +447,7 @@ const Utilities = () => {
                 </div>
               ))}
             </div>
+            {/* Cửa hàng tiện ích */}
             <div className="pt-8">
               <div className=" flex relative items-center  ">
                 <div className="bg-[#4284f3]  px-8 w-auto h-[30px]  absolute bottom-0 flex justify-center items-center">
@@ -283,6 +479,7 @@ const Utilities = () => {
                 ))}
               </div>
             </div>
+            {/* Thư viện tri thức số */}
             <div className="pt-8">
               <div className=" flex relative items-center  ">
                 <div className="bg-[#4284f3]  px-8 w-auto h-[30px]  absolute bottom-0 flex justify-center items-center">
@@ -314,6 +511,7 @@ const Utilities = () => {
                 ))}
               </div>
             </div>
+            {/* Cuộc sống thông minh */}
             <div className="pt-8">
               <div className=" flex relative items-center  ">
                 <div className="bg-[#4284f3]  px-8 w-auto h-[30px]  absolute bottom-0 flex justify-center items-center">
@@ -345,6 +543,7 @@ const Utilities = () => {
                 ))}
               </div>
             </div>
+            {/* Tài chính - Bảo hiểm */}
             <div className="pt-8">
               <div className=" flex relative items-center  ">
                 <div className="bg-[#4284f3]  px-8 w-auto h-[30px]  absolute bottom-0 flex justify-center items-center">
@@ -370,6 +569,262 @@ const Utilities = () => {
                     <div className=" ">
                       <div className="lg:text-sm text-[0.76rem] text-[#555770] font-normal flex justify-center my-2">
                         {insurance.name}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Thanh toán -  hóa đơn */}
+            <div className="pt-8">
+              <div className=" flex relative items-center  ">
+                <div className="bg-[#4284f3]  px-8 w-auto h-[30px]  absolute bottom-0 flex justify-center items-center">
+                  <div className="w-1 h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-3 top-0"></div>
+                  <div className="w-1 h-[11.99px] -rotate-0 bg-[#4284f3] absolute -right-1 bottom-0 "></div>
+                  <div className="w-[5px] h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-1 top-0 "></div>
+                  <p className="mt-[1.5px] text-white lg:text-sm text-[0.77rem] font-normal ">
+                    Thanh toán - Hóa đơn
+                  </p>
+                </div>
+              </div>
+              <div className=" border-b-[3px] border-[#4284f3] w-full"></div>
+              <div className="lg:grid lg:grid-cols-6 lg:gap-2 grid grid-cols-3 gap-1 mt-8 mb-8 ">
+                {bills.map((bill, f) => (
+                  <div key={f} className="lg:px-2 px-0.5">
+                    <div className="bg-white rounded-lg border shadow-md w-[3.74rem] h-[3.74rem] flex items-center justify-center m-auto">
+                      <img
+                        className="rounded-md w-12 h-12"
+                        src={bill.img}
+                        alt=""
+                      />
+                    </div>
+                    <div className=" ">
+                      <div className="lg:text-sm text-[0.76rem] text-[#555770] font-normal flex justify-center my-2">
+                        {bill.name}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Du lịch - Đi lại
+             */}
+            <div className="pt-8">
+              <div className=" flex relative items-center  ">
+                <div className="bg-[#4284f3]  px-8 w-auto h-[30px]  absolute bottom-0 flex justify-center items-center">
+                  <div className="w-1 h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-3 top-0"></div>
+                  <div className="w-1 h-[11.99px] -rotate-0 bg-[#4284f3] absolute -right-1 bottom-0 "></div>
+                  <div className="w-[5px] h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-1 top-0 "></div>
+                  <p className="mt-[1.5px] text-white lg:text-sm text-[0.77rem] font-normal ">
+                    Du lịch - đi lại
+                  </p>
+                </div>
+              </div>
+              <div className=" border-b-[3px] border-[#4284f3] w-full"></div>
+              <div className="lg:grid lg:grid-cols-6 lg:gap-2 grid grid-cols-3 gap-1 mt-8 mb-8 ">
+                {travels.map((travel, g) => (
+                  <div key={g} className="lg:px-2 px-0.5">
+                    <div className="bg-white rounded-lg border shadow-md w-[3.74rem] h-[3.74rem] flex items-center justify-center m-auto">
+                      <img
+                        className="rounded-md w-12 h-12"
+                        src={travel.img}
+                        alt=""
+                      />
+                    </div>
+                    <div className=" ">
+                      <div className="lg:text-sm text-[0.76rem] text-[#555770] font-normal flex justify-center my-2">
+                        {travel.name}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Chuyển tiền - nhận tài sản */}
+            <div className="pt-8">
+              <div className=" flex relative items-center  ">
+                <div className="bg-[#4284f3]  px-8 w-auto h-[30px]  absolute bottom-0 flex justify-center items-center">
+                  <div className="w-1 h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-3 top-0"></div>
+                  <div className="w-1 h-[11.99px] -rotate-0 bg-[#4284f3] absolute -right-1 bottom-0 "></div>
+                  <div className="w-[5px] h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-1 top-0 "></div>
+                  <p className="mt-[1.5px] text-white lg:text-sm text-[0.77rem] font-normal ">
+                    Chyển ngân hàng - Nhận tài sản
+                  </p>
+                </div>
+              </div>
+              <div className=" border-b-[3px] border-[#4284f3] w-full"></div>
+              <div className="lg:grid lg:grid-cols-6 lg:gap-2 grid grid-cols-3 gap-1 mt-8 mb-8 ">
+                {transfers.map((transfer, g) => (
+                  <div key={g} className="lg:px-2 px-0.5">
+                    <div className="bg-white rounded-lg border shadow-md w-[3.74rem] h-[3.74rem] flex items-center justify-center m-auto">
+                      <img
+                        className="rounded-md w-12 h-12"
+                        src={transfer.img}
+                        alt=""
+                      />
+                    </div>
+                    <div className=" ">
+                      <div className="lg:text-sm text-[0.76rem] text-[#555770] font-normal flex justify-center my-2">
+                        {transfer.name}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="pt-8">
+              <div className=" flex relative items-center  ">
+                <div className="bg-[#4284f3]  px-8 w-auto h-[30px]  absolute bottom-0 flex justify-center items-center">
+                  <div className="w-1 h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-3 top-0"></div>
+                  <div className="w-1 h-[11.99px] -rotate-0 bg-[#4284f3] absolute -right-1 bottom-0 "></div>
+                  <div className="w-[5px] h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-1 top-0 "></div>
+                  <p className="mt-[1.5px] text-white lg:text-sm text-[0.77rem] font-normal ">
+                    Thương mại điện tử
+                  </p>
+                </div>
+              </div>
+              <div className=" border-b-[3px] border-[#4284f3] w-full"></div>
+              <div className="lg:grid lg:grid-cols-6 lg:gap-2 grid grid-cols-3 gap-1 mt-8 mb-8 ">
+                {ecommerces.map((ecommerce, h) => (
+                  <div key={h} className="lg:px-2 px-0.5">
+                    <div className="bg-white rounded-lg border shadow-md w-[3.74rem] h-[3.74rem] flex items-center justify-center m-auto">
+                      <img
+                        className="rounded-md w-12 h-12"
+                        src={ecommerce.img}
+                        alt=""
+                      />
+                    </div>
+                    <div className=" ">
+                      <div className="lg:text-sm text-[0.76rem] text-[#555770] font-normal flex justify-center my-2">
+                        {ecommerce.name}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="pt-8">
+              <div className=" flex relative items-center  ">
+                <div className="bg-[#4284f3]  px-8 w-auto h-[30px]  absolute bottom-0 flex justify-center items-center">
+                  <div className="w-1 h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-3 top-0"></div>
+                  <div className="w-1 h-[11.99px] -rotate-0 bg-[#4284f3] absolute -right-1 bottom-0 "></div>
+                  <div className="w-[5px] h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-1 top-0 "></div>
+                  <p className="mt-[1.5px] text-white lg:text-sm text-[0.77rem] font-normal ">
+                    Mua thẻ điện thoại
+                  </p>
+                </div>
+              </div>
+              <div className=" border-b-[3px] border-[#4284f3] w-full"></div>
+              <div className="lg:grid lg:grid-cols-6 lg:gap-2 grid grid-cols-3 gap-1 mt-8 mb-8 ">
+                {phonecards.map((phonecard, h) => (
+                  <div key={h} className="lg:px-2 px-0.5">
+                    <div className="bg-white rounded-lg border shadow-md w-[3.74rem] h-[3.74rem] flex items-center justify-center m-auto">
+                      <img
+                        className="rounded-md w-12 h-12"
+                        src={phonecard.img}
+                        alt=""
+                      />
+                    </div>
+                    <div className=" ">
+                      <div className="lg:text-sm text-[0.76rem] text-[#555770] font-normal flex justify-center my-2">
+                        {phonecard.name}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Games */}
+            <div className="pt-8">
+              <div className=" flex relative items-center  ">
+                <div className="bg-[#4284f3]  px-8 w-auto h-[30px]  absolute bottom-0 flex justify-center items-center">
+                  <div className="w-1 h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-3 top-0"></div>
+                  <div className="w-1 h-[11.99px] -rotate-0 bg-[#4284f3] absolute -right-1 bottom-0 "></div>
+                  <div className="w-[5px] h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-1 top-0 "></div>
+                  <p className="mt-[1.5px] text-white lg:text-sm text-[0.77rem] font-normal ">
+                    Trò chơi - Ứng dụng
+                  </p>
+                </div>
+              </div>
+              <div className=" border-b-[3px] border-[#4284f3] w-full"></div>
+              <div className="lg:grid lg:grid-cols-6 lg:gap-2 grid grid-cols-3 gap-1 mt-8 mb-8 ">
+                {games.map((game, h) => (
+                  <div key={h} className="lg:px-2 px-0.5">
+                    <div className="bg-white rounded-lg border shadow-md w-[3.74rem] h-[3.74rem] flex items-center justify-center m-auto">
+                      <img
+                        className="rounded-md w-12 h-12"
+                        src={game.img}
+                        alt=""
+                      />
+                    </div>
+                    <div className=" ">
+                      <div className="lg:text-sm text-[0.76rem] text-[#555770] font-normal flex justify-center my-2">
+                        {game.name}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Thanh toán */}
+            <div className="pt-8">
+              <div className=" flex relative items-center  ">
+                <div className="bg-[#4284f3]  px-8 w-auto h-[30px]  absolute bottom-0 flex justify-center items-center">
+                  <div className="w-1 h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-3 top-0"></div>
+                  <div className="w-1 h-[11.99px] -rotate-0 bg-[#4284f3] absolute -right-1 bottom-0 "></div>
+                  <div className="w-[5px] h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-1 top-0 "></div>
+                  <p className="mt-[1.5px] text-white lg:text-sm text-[0.77rem] font-normal ">
+                    Thanh toán tại quầy
+                  </p>
+                </div>
+              </div>
+              <div className=" border-b-[3px] border-[#4284f3] w-full"></div>
+              <div className="lg:grid lg:grid-cols-6 lg:gap-2 grid grid-cols-3 gap-1 mt-8 mb-8 ">
+                {pays.map((pay, l) => (
+                  <div key={l} className="lg:px-2 px-0.5">
+                    <div className="bg-white rounded-lg border shadow-md w-[3.74rem] h-[3.74rem] flex items-center justify-center m-auto">
+                      <img
+                        className="rounded-md w-12 h-12"
+                        src={pay.img}
+                        alt=""
+                      />
+                    </div>
+                    <div className=" ">
+                      <div className="lg:text-sm text-[0.76rem] text-[#555770] font-normal flex justify-center my-2">
+                        {pay.name}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Demo */}
+            <div className="pt-8">
+              <div className=" flex relative items-center  ">
+                <div className="bg-[#4284f3]  px-8 w-auto h-[30px]  absolute bottom-0 flex justify-center items-center">
+                  <div className="w-1 h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-3 top-0"></div>
+                  <div className="w-1 h-[11.99px] -rotate-0 bg-[#4284f3] absolute -right-1 bottom-0 "></div>
+                  <div className="w-[5px] h-[32.99px] -rotate-12 bg-[#4284f3] absolute -right-1 top-0 "></div>
+                  <p className="mt-[1.5px] text-white lg:text-sm text-[0.77rem] font-normal ">
+                    Demo
+                  </p>
+                </div>
+              </div>
+              <div className=" border-b-[3px] border-[#4284f3] w-full"></div>
+              <div className="lg:grid lg:grid-cols-6 lg:gap-2 grid grid-cols-3 gap-1 mt-8 mb-8 ">
+                {demos.map((demo, k) => (
+                  <div key={k} className="lg:px-2 px-0.5">
+                    <div className="bg-white rounded-lg border shadow-md w-[3.74rem] h-[3.74rem] flex items-center justify-center m-auto">
+                      <img
+                        className="rounded-md w-12 h-12"
+                        src={demo.img}
+                        alt=""
+                      />
+                    </div>
+                    <div className=" ">
+                      <div className="lg:text-sm text-[0.76rem] text-[#555770] font-normal flex justify-center my-2">
+                        {demo.name}
                       </div>
                     </div>
                   </div>
