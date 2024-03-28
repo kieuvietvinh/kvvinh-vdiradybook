@@ -1,14 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import Contribute from "./assets/contribute";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {} from "react-router-dom";
 import Utilities from "./utilities";
+import Portfolio_details from "./details";
+// import Contribute from "./assets/contribute";
+// import Home from "./home_page";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <div className="font-roboto bg-slate-100">
-      {/* <Contribute /> */}
-      <Utilities />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Portfolio_details />} />
+        <Route path="/news" element={<Utilities />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );

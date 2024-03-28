@@ -399,6 +399,14 @@ const Utilities = () => {
 
   return (
     <div className=" mt-10   mx-auto w-full max-w-[952px] font-roboto bg-white p-4">
+      <div>
+        <ul>
+          <li>
+            <a href="/"> Chuyển hướng tới trang khác</a>
+          </li>
+        </ul>
+      </div>
+
       <div className=" border-b border-gray-200 mt-4 sm:w-auto bg-white shadow-sm sm:grid sm:grid-cols-2 sm:gap-2  ">
         {tabs.map((tab, a) => (
           <button
@@ -414,6 +422,7 @@ const Utilities = () => {
           </button>
         ))}
       </div>
+
       <div className="pt-14 font-roboto">
         {activeTab === 1 && (
           //  Công cụ thông minh
