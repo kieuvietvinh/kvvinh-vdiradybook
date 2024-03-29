@@ -6,7 +6,7 @@ import {} from "react-router-dom";
 import Utilities from "./utilities";
 import Portfolio_details from "./details";
 // import Contribute from "./assets/contribute";
-// import Home from "./home_page";
+import Home from "./home_page";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
