@@ -1,4 +1,22 @@
+import React, { useState, useEffect } from "react";
+
 const home = () => {
+  const [data, setData] = useState([]);
+  console.log("data", data);
+
+  const loadData = async () => {
+    try {
+      const res = await fetch(`http://localhost:3000/autor`).then((response) =>
+        response.json()
+      );
+      setData(res);
+      console.log("res", res);
+    } catch (error) {}
+  };
+
+  useEffect(() => {
+    loadData();
+  }, []);
   return (
     <div className="font-roboto lg:max-w-screen-xl  mx-auto w-full max-w-screen-xl bg-white ">
       <div className="flex justify-between items-center p-4">
@@ -139,20 +157,32 @@ const home = () => {
           </div>
         </div>
       </div>
-      <div className="">
-        <div className="lg:px-2 px-0.5">
-          <div className="bg-white rounded-lg border shadow-md w-[3.74rem] h-[3.74rem] flex items-center justify-center m-auto">
-            <img
-              className="rounded-md w-12 h-12"
-              src="https://ocopmart.org/static/media/images/product-category/2022_01_14/s80_80/giay-dep-do-da-01-1642151545.png"
-              alt=""
-            />
-          </div>
-          <div className=" ">
-            <div className="lg:text-sm text-[0.76rem] text-[#555770] font-normal flex justify-center my-2">
-              SẢN PHẨM VIP
+      <div className="w-full flex ">
+        {data.map((item, index) => (
+          <div
+            key={index}
+            className="lg:px-2 px-0.5 bg-white border shadow-md w-[154px] h-[154px] "
+          >
+            <div className=" flex items-center justify-center p-[10px]">
+              <img
+                className="rounded-md w-[80px] h-[80px]"
+                src={item.img}
+                alt=""
+              />
+            </div>
+            <div className="mt-[3px] ">
+              <div className="lg:text-sm text-[0.76rem] text-[#555770] font-normal  text-center">
+                {item.name}
+              </div>
             </div>
           </div>
+        ))}
+      </div>
+      <div className="mt-5 bg-white relative">
+        <div className="bg-[#4284f3]  px-4 w-auto h-16  absolute top-0 flex justify-center items-center">
+          <p className="mt-[1.5px] text-white text-[15px] font-medium ">
+            Sản phẩm hot
+          </p>
         </div>
       </div>
     </div>

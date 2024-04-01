@@ -1,5 +1,6 @@
 
 {
+  "utilities": {
 "tabs" : [
   { "id": 1, "name": "Tất cả" },
   { "id": 2, "name": "Chuyển đổi kỹ thuật số" }
@@ -388,5 +389,50 @@
     "img": "https://vdiarybook.com/assets/images/VDB-64.png",
     "name": "demo"
   }
+]
+
+},
+"autor" : [
+  {
+    "id": 1,
+    "img": "https://ocopmart.org/static/media/images/product-category/2022_01_14/s80_80/giay-dep-do-da-01-1642151545.png",
+    "name": " SẢN PHẨM VIP"
+  },
+  {
+    "id": 2,
+    "img": "https://ocopmart.org/static/media/images/product-category/2022_01_14/s80_80/ocop-worker-01-1642151528.png",
+    "name": "OCOP WORKER "
+  },
+  {
+    "id": 3,
+    "img": "https://ocopmart.org/static/media/images/product-category/2022_01_14/s80_80/ban-cung-01-1642151566.png",
+    "name": "BÁN CÙNG"
+  },
+  {
+    "id": 4,
+    "img": "https://ocopmart.org/static/media/images/product-category/2022_01_14/s80_80/san-pham-chung-nhan-ocop-mart-01-1642151578.png",
+    "name": "SẢN PHẨM OCOPMART"
+  },
+  {
+    "id": 5,
+    "img": "https://ocopmart.org/static/media/images/product-category/2022_01_14/s80_80/tiepthiso-marrt-01-1642151604.png",
+    "name": "TIẾP THỊ SỐ MART"
+  },
+  {
+    "id": 6,
+    "img": "https://ocopmart.org/static/media/images/product-category/2022_01_14/s80_80/trang-suc-01-1642151617.png",
+    "name": "TRANG SỨC"
+  },
+  {
+    "id": 7,
+    "img": "https://ocopmart.org/static/media/images/product-category/2022_01_14/s80_80/ocoop-heathy-01-1642151628.png",
+    "name": "OCOP HEATHY"
+  },
+  {
+    "id": 8,
+    "img": "https://ocopmart.org/static/media/images/product-category/2022_06_13/s80_80/2-1655115239.png",
+    "name": "OCOP MAIL"
+  }
+  
 ]
 }
