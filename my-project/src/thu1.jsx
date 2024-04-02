@@ -1,33 +1,46 @@
 import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
+import "tailwindcss/tailwind.css";
 
-const SliderImage = ({ images, interval = 3000 }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const url = "https://api.vdiarybook.net/api/utilities";
+const token =
+  "Bearer " +
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWZkMzdiYTU3YTg0OWM4NTJmYmQ2YzgiLCJlbWFpbCI6ImtpZXV2aWV0dmluaDAwMDlAZ21haWwuY29tIiwicGVybWlzc2lvbnMiOnt9LCJyb2xlIjoiVVNFUiIsImlhdCI6MTcxMjAyNTEyMywiZXhwIjoxNzk4NDI1MTIzfQ.xgQmmT4Lmbp7WQ_3phzte3bo2tepyC1ppGuuibIGcV0";
+
+const App12 = () => {
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, interval);
-
-    return () => {
-      clearInterval(timer);
-    };
-  }, [images.length, interval]);
+    fetch(url, {
+      method: "GET",
+      headers: {
+        Authorization: token,
+      },
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => console.log(data))
+      .catch((error) => console.error("Error:", error));
+  }, []);
 
   return (
-    <div className="relative">
-      {images.map((image, index) => (
-        <img
-          key={index}
-          src={image}
-          alt={`Slider ${index}`}
-          className={`absolute inset-0 h-full w-full object-cover transition-opacity ${
-            index === currentIndex ? "opacity-100" : "opacity-0"
-          }`}
-        />
-      ))}
-      ssdsd
+    <div className="bg-gray-100 p-4 rounded-lg m-4">
+      <h1 className="text-2xl font-bold text-purple-800"></h1>
+      <ul>
+        {data.data.all.map(
+          (item = (
+            <li key={item.id} className="text-gray-600">
+              {item.name}
+            </li>
+          ))
+        )}
+      </ul>
     </div>
   );
 };
 
-export default SliderImage;
+export default App12;

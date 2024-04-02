@@ -102,31 +102,30 @@ const home = () => {
           </ul>
         </div>
       </div>
-      <div className=" h-64 p-2 grid grid-rows-3 grid-flow-col gap-2">
-        <div className=" ">
+      <div class="grid grid-cols-2 gap-4 row-span-2">
+        <div class="">
           <img
-            className="rounded-md h-64 w-full"
-            src="https://ocopmart.org/static/media/files/banners/s800_800/874_1672725493_90363b3c3f5e2b85.jpg"
+            src="https://ocopmart.org/static/media/files/banners/s800_800/555_1657348473_42462c92179db2b1.png"
             alt=""
           />
         </div>
-        <div className=" pl-[5px]">
-          <div>
+        <div>
+          <div class=" h-[50%]">
             <img
-              className="w-full h-32 rounded-md"
-              src="https://ocopmart.org/static/media/files/banners/s800_800/555_1657348473_42462c92179db2b1.png"
+              src="https://ocopmart.org/static/media/files/banners/s800_800/874_1672725493_90363b3c3f5e2b85.jpg"
               alt=""
             />
           </div>
-          <div>
+
+          <div class=" h-[50%] ">
             <img
-              className="h-32 w-full rounded-md"
               src="https://ocopmart.org/static/media/files/banners/s800_800/848_1634452050_979616bc252a0d32.png"
               alt=""
             />
           </div>
         </div>
       </div>
+
       <div className="flex  p-2">
         <div className="w-[65%] flex justify-between py-[15px]">
           <div className="text-[#2f80ed] font-semibold text-[17px] flex items-center justify-center">
@@ -178,11 +177,47 @@ const home = () => {
           </div>
         ))}
       </div>
-      <div className="mt-5 bg-white relative shadow-md w-full ">
-        <div className="bg-[#4284f3]  px-4 w-auto h-16  absolute top-0 flex justify-center items-center">
+      <div className="mt-5   shadow-md w-full ">
+        <div className="bg-[#4284f3]  px-4 w-auto h-16   flex justify-center items-center">
           <p className=" text-white text-[15px] font-medium uppercase">
             Sản phẩm hot
           </p>
+        </div>
+      </div>
+      <div>
+        <p className="text-[#2f80ed] font-semibold text-[1.06rem] ">
+          SẢN PHẨM VIP
+        </p>
+        <div>
+          <img
+            src="https://ocopmart.org/static/media/files/banners/593_1672125309_35563aa9b7d42cef.jpg"
+            alt=""
+          />
+        </div>
+        <div className="grid grid-cols-6 gap-2">
+          <div className="bg-white hover:drop-shadow-lg  p-1  ">
+            <div className="w-full h-auto bg-white hover:scale-125 hover:delay-500 hover:duration-500">
+              <img
+                src="https://ocopmart.org/static/media/images/news/s200_200/cmn-1624865717.jpg"
+                alt=""
+              />
+            </div>
+            <h3 className="text-regal-amber line-clamp-1">Cao Đẳng Sâm</h3>
+
+            <span className="text-[#262261] font-normal text-sm">
+              280.000 đ
+            </span>
+            <span className="text-black text-[13px] font-normal">
+              Quảng Nam
+            </span>
+            <button className="bg-[#262261] text-white font-normal text-[13px] p-1">
+              Thêm vào
+            </button>
+            <div className="  flex justify-center  text-[#262261] text-[13px] mt-[5px] font-normal">
+              CÔNG TY TRÁCH NHIỆM HỮU HẠN XUẤT NHẬP KHẨU DƯỢC Y HỌC THÁI NGUYÊN
+            </div>
+            <div className="text-yellow-400">rating</div>
+          </div>
         </div>
       </div>
     </div>
