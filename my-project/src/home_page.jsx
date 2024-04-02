@@ -102,15 +102,15 @@ const home = () => {
           </ul>
         </div>
       </div>
-      <div className="flex h-64 p-2">
-        <div className="w-[65%] ">
+      <div className=" h-64 p-2 grid grid-rows-3 grid-flow-col gap-2">
+        <div className=" ">
           <img
             className="rounded-md h-64 w-full"
             src="https://ocopmart.org/static/media/files/banners/s800_800/874_1672725493_90363b3c3f5e2b85.jpg"
             alt=""
           />
         </div>
-        <div className="w-[35%] pl-[5px]">
+        <div className=" pl-[5px]">
           <div>
             <img
               className="w-full h-32 rounded-md"
@@ -178,9 +178,9 @@ const home = () => {
           </div>
         ))}
       </div>
-      <div className="mt-5 bg-white relative">
+      <div className="mt-5 bg-white relative shadow-md w-full ">
         <div className="bg-[#4284f3]  px-4 w-auto h-16  absolute top-0 flex justify-center items-center">
-          <p className="mt-[1.5px] text-white text-[15px] font-medium ">
+          <p className=" text-white text-[15px] font-medium uppercase">
             Sản phẩm hot
           </p>
         </div>

@@ -11,7 +11,7 @@ import Home from "./home_page";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
+      <Routes className="">
         <Route path="/" element={<Portfolio_details />} />
         <Route path="/news" element={<Utilities />} />
         <Route path="/home" element={<Home />} />
