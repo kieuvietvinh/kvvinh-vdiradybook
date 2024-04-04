@@ -1,46 +1,39 @@
-import React, { useState, useEffect } from "react";
-import ReactDOM from "react-dom";
-import "tailwindcss/tailwind.css";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const url = "https://api.vdiarybook.net/api/utilities";
-const token =
-  "Bearer " +
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWZkMzdiYTU3YTg0OWM4NTJmYmQ2YzgiLCJlbWFpbCI6ImtpZXV2aWV0dmluaDAwMDlAZ21haWwuY29tIiwicGVybWlzc2lvbnMiOnt9LCJyb2xlIjoiVVNFUiIsImlhdCI6MTcxMjAyNTEyMywiZXhwIjoxNzk4NDI1MTIzfQ.xgQmmT4Lmbp7WQ_3phzte3bo2tepyC1ppGuuibIGcV0";
-
-const App12 = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch(url, {
-      method: "GET",
-      headers: {
-        Authorization: token,
-      },
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return response.json();
-      })
-      .then((data) => console.log(data))
-      .catch((error) => console.error("Error:", error));
-  }, []);
+function MySlider() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+  };
 
   return (
-    <div className="bg-gray-100 p-4 rounded-lg m-4">
-      <h1 className="text-2xl font-bold text-purple-800"></h1>
-      <ul>
-        {data.data.all.map(
-          (item = (
-            <li key={item.id} className="text-gray-600">
-              {item.name}
-            </li>
-          ))
-        )}
-      </ul>
-    </div>
+    <Slider {...settings}>
+      <div>
+        <img
+          src="https://ocopmart.org/static/media/files/banners/s800_800/889_1672726212_22463b3c6c441315.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://ocopmart.org/static/media/files/banners/s800_800/815_1672725428_22663b3c3b428b25.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://ocopmart.org/static/media/files/banners/s800_800/874_1672725493_90363b3c3f5e2b85.jpg"
+          alt=""
+        />
+      </div>
+    </Slider>
   );
-};
-
-export default App12;
+}
+export default MySlider;
