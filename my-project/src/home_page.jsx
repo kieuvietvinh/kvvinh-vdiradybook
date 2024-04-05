@@ -456,7 +456,7 @@ const home = () => {
         {autor.map((item) => (
           <div
             key={item.id}
-            className="lg:px-2 px-0.5 bg-white border-l  h-[154px] w-[12.5%] "
+            className="lg:px-2 px-0.5 bg-white border-l  h-[154px] w-[12.5%]"
           >
             <div className=" flex items-center justify-center p-[10px] ">
               <img
