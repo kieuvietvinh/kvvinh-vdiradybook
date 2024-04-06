@@ -30,161 +30,121 @@ const management = () => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-5 gap-2 pt-5">
-        <div>
-          <form className="max-w-xs mx-auto">
-            <div className="relative">
-              <div className="absolute  right-2 top-2">
-                <svg
-                  className="w-4 h-4 text-[#4284F3]  "
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                  />
-                </svg>
+      <div className=" pt-5 grid grid-cols-2 gap-2 ">
+        <div className="grid grid-cols-2 gap-2">
+          <div>
+            <form className="max-w-[250px] mx-auto h-[38px] ">
+              <div className="relative">
+                <div className="absolute  right-2 top-3 ">
+                  <svg
+                    className="w-4 h-4 text-[#4284F3]  "
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="search"
+                  id="default-search"
+                  className="block w-full p-2  text-sm text-[#8E8E93] border border-gray-300 rounded-lg bg-white font-normal leading-[22px]"
+                  placeholder="Tìm kiếm..."
+                  required
+                />
               </div>
-              <input
-                type="search"
-                id="default-search"
-                className="block w-full p-1  text-sm text-[#8E8E93] border border-gray-300 rounded-lg bg-white font-normal leading-[22px]"
-                placeholder="Tìm kiếm..."
-                required
-              />
-            </div>
-          </form>
+            </form>
+          </div>
+          <div>
+            <form className="max-w-[250px] mx-auto h-[38px]">
+              <select
+                id="countries"
+                className="block w-full p-[0.6rem] text-sm text-[#8E8E93] border border-gray-300 rounded-lg bg-white font-normal leading-[22px] "
+              >
+                <option selected>Danh mục</option>
+                <option value="US">United States</option>
+                <option value="CA">Canada</option>
+              </select>
+            </form>
+          </div>
         </div>
-        <div>
-          <form className="max-w-xs mx-auto">
-            <select
-              id="countries"
-              className="block w-full p-[5.5px]  text-sm text-[#8E8E93] border border-gray-300 rounded-lg bg-white font-normal leading-[22px] "
-            >
-              <option selected>Danh mục</option>
-              <option value="US">United States</option>
-              <option value="CA">Canada</option>
-            </select>
-          </form>
-        </div>
-        <div></div>
-        <div className="rounded-2xl bg-white border border-[#4284F3] flex items-center justify-center">
-          <button className="text-[#4284F3] font-normal text-sm leading-[22px]   ">
-            Đăng kí quảng cáo
-          </button>
-        </div>
-        <div className="rounded-2xl bg-[#4284F3]  flex items-center justify-center">
-          <button className="text-white font-normal text-sm leading-[22px]">
-            Tạo niêm yết
-          </button>
+        <div className="grid grid-cols-3 gap-2">
+          <div></div>
+          <div className="rounded-2xl bg-white border border-[#4284F3] flex items-center justify-center">
+            <button className="text-[#4284F3] font-normal text-sm leading-[22px]   ">
+              Đăng kí quảng cáo
+            </button>
+          </div>
+          <div className="rounded-2xl bg-[#4284F3]  flex items-center justify-center">
+            <button className="text-white font-normal text-sm leading-[22px]">
+              Tạo niêm yết
+            </button>
+          </div>
         </div>
       </div>
-      <div>
-        <footer className="bg-white dark:bg-gray-900">
-          <div className="mx-auto w-full max-w-screen-xl">
-            <div className="grid grid-cols-2 gap-0  py-6 lg:py-8 md:grid-cols-6">
-              <div>
-                <h2 className="mb-6 text-sm font-bold text-[#1F1F1F] uppercase leading-[22px] bg-[#0000000D] p-2">
-                  tên niêm yết
-                </h2>
-                <ul className="text-[#1F1F1F]  font-normal text-sm leading-[22px]">
-                  <li className="mb-4 flex">
-                    <a href="">
-                      <img
-                        className="rounded-full w-10 h-10"
-                        src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ9dpxy_AjesfOKxyp-lrdjOsXrG7JvHGeved9CbAB5V6u_4zvIBNzE1LwscHKI9PVNechUdM33bfJT0Z_r81KcyqbuIrBV7b4ZMx_Cubd-EOv_aE-1oNvQ&usqp=CAc"
-                        alt=""
-                      />
-                    </a>
-                    <a href="#" className=" ">
-                      iphone 13 promax
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h2 className="mb-6 text-sm font-bold text-[#1F1F1F] uppercase leading-[22px] bg-[#0000000D] p-2">
-                  danh mục
-                </h2>
-                <ul className="text-[#1F1F1F]  font-normal text-sm leading-[22px]">
-                  <li className="mb-4 flex">
-                    <a href="">
-                      <img
-                        className="rounded-full w-10 h-10"
-                        src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ9dpxy_AjesfOKxyp-lrdjOsXrG7JvHGeved9CbAB5V6u_4zvIBNzE1LwscHKI9PVNechUdM33bfJT0Z_r81KcyqbuIrBV7b4ZMx_Cubd-EOv_aE-1oNvQ&usqp=CAc"
-                        alt=""
-                      />
-                    </a>
-                    <a href="#" className=" uppercase">
-                      pgc market
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h2 className="mb-6 text-sm font-bold text-[#1F1F1F] uppercase leading-[22px] bg-[#0000000D] p-2 ">
-                  hình thức bán
-                </h2>
-                <ul className="text-[#1F1F1F]  font-normal text-sm leading-[22px]">
-                  <li className="mb-4">
-                    <a href="#" className="uppercase">
-                      retail
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h2 className="mb-6 text-sm font-bold text-[#1F1F1F] uppercase leading-[22px] bg-[#0000000D] p-2">
-                  loại niêm yết
-                </h2>
-                <ul className="text-[#1F1F1F]  font-normal text-sm leading-[22px]">
-                  <li className="mb-4">
-                    <a href="#" className="uppercase">
-                      normal
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h2 className="mb-6 text-sm font-bold text-[#1F1F1F] uppercase leading-[22px] bg-[#0000000D] p-2">
-                  ngày tạo
-                </h2>
-                <ul className="text-[#1F1F1F]  font-normal text-sm leading-[22px]">
-                  <li className="mb-4">
-                    <a href="#" className="">
-                      1/24/1024
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h2 className="mb-6 text-sm font-bold text-[#1F1F1F] uppercase leading-[22px] bg-[#0000000D] p-2">
-                  ngày công khai
-                </h2>
-                <ul className="text-[#1F1F1F]  font-normal text-sm leading-[22px]">
-                  <li className="mb-4">
-                    <a href="#" className="">
-                      <label className="inline-flex items-center cursor-pointer">
-                        <input
-                          type="checkbox"
-                          value=""
-                          className="sr-only peer"
-                        />
-                        <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none   rounded-full  peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all  peer-checked:bg-blue-600"></div>
-                      </label>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </footer>
+
+      <div className="pt-5">
+        <table className="table-auto w-full ">
+          <thead className="text-justify">
+            <tr className="text-sm font-bold text-[#1F1F1F] uppercase leading-[22px] bg-[#0000000D]">
+              <th className="py-2">TẠO NIÊM YẾT</th>
+              <th>DANH MỤC</th>
+              <th>HÌNH THỨC BÁN</th>
+              <th>LOẠI NIÊM YẾT</th>
+              <th>NGÀY TẠO</th>
+              <th> CÔNG KHAI</th>
+            </tr>
+          </thead>
+          <tbody className="w-full">
+            <tr className=" text-[#1F1F1F]  font-normal text-sm leading-[22px] ">
+              <td>
+                <div className="flex items-center gap-2">
+                  <img
+                    className="rounded-full w-10 h-10 flex"
+                    src="image/iphone.jpeg"
+                    alt=""
+                  />{" "}
+                  Iphone 13 promax{" "}
+                </div>
+              </td>
+              <td className="uppercase">
+                <div className="flex items-center gap-2">
+                  <img
+                    className="rounded-full w-10 h-10 flex"
+                    src="image/iphone.jpeg"
+                    alt=""
+                  />{" "}
+                  pgc market
+                </div>
+              </td>
+              <td className="uppercase">retail</td>
+              <td className="uppercase">normal </td>
+              <td className="uppercase">
+                <p>1/24/102</p>
+                <p>10:22:35PM</p>
+              </td>
+              <td>
+                <div className="flex relative">
+                  <label className="inline-flex items-center cursor-pointer">
+                    <input type="checkbox" value="" className="sr-only peer" />
+                    <div className="relative w-11 h-6 bg-gray-200 peer-focus:outline-none   rounded-full  peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all  peer-checked:bg-blue-600"></div>
+                  </label>
+                  <div className="absolute right-0">
+                    {" "}
+                    <img src="/image/Pen.png" alt="" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   );

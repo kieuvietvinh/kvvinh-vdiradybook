@@ -9,6 +9,7 @@ import Portfolio_details from "./details";
 import Home from "./home_page";
 import New_branch from "./new_branch";
 import Management from "./assets/management";
+import Order_details from "./order_details";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
         <Route path="/home" element={<Home />} />
         <Route path="/branch" element={<New_branch />} />
         <Route path="/mana" element={<Management />} />
+        <Route path="/details" element={<Order_details />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
