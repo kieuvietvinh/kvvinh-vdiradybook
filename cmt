@@ -1,14 +1,2 @@
-- file đuôi tsx -> jsx
-- tạo folder component -> move Popular_topic.jsx
-Quotations.jsx
-contribute.jsx
-details.jsx
-home_page.jsx
-new_branch.tsx
-order_details.tsx
-page.jsx
-thu1.jsx
-utilities.tsx
-- đặt tên component theo quy tắt CamelCase
-- main.jsx -> routes.jsx
-- app.jsx -> dùng component routes.jsx
+- header, left-siderbar, right-sider -> fixed
+- element nào có thể click đc -> cursor-pointer
